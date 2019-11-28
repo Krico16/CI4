@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://igniter.com/';
+	public $baseURL = 'http://igniter.com:8080/';
 
 	/*
 	|--------------------------------------------------------------------------

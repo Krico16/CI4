@@ -85,3 +85,4 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest auto
 //define('CSSFOLDER', 'public/css/');
 define('BSFOLDER', 'public/bootstrap/');
 define('MSFOLDER', 'public/materialize/');
+define('PUBLICFOLDER', 'public');

@@ -124,3 +124,6 @@ nb-configuration.xml
 
 /results/
 /phpunit*.xml
+/Unused
+/writable/debugbar/*.json
+/writable/logs/*.php

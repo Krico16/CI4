@@ -1,13 +1,10 @@
-<?php 
-$db = \Config\Database::connect();
-$attr = array('class' => 'form-signin');
-?>
-
+<?php $validation = \Config\Services::validation(); ?>
 <body>
+    <?= $validation->listErrors(); ?>
     <div class="container">
         <div class="row m-b none">
             <h3 class="center-align darken-4">Ingreso al sistema</h3>
-            <?php echo form_open('login_post',$attr); ?>
+            <?php echo form_open('Login'); ?>
             <div class="input-field col s12">
                 <?php 
                 $User = array(

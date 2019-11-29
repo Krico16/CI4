@@ -6,10 +6,6 @@ class Form extends Controller{
 
     function __construct() {
         parent::__construct();
-
-        helper(['form','url']);
-
-        $this->isLogged = $this->session->userdata('isLogged');
     }
 
     public function index()

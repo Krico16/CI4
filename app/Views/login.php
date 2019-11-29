@@ -4,18 +4,18 @@
     <div class="container">
         <div class="row m-b none">
             <h3 class="center-align darken-4">Ingreso al sistema</h3>
-            <?php echo form_open('Login'); ?>
+            <?= form_open('http://igniter.com:8080/Login/postLogin'); ?>
             <div class="input-field col s12">
                 <?php 
                 $User = array(
-                    'name' => 'username',
-                    'id' => 'username',
+                    'name' => 'RUC',
+                    'id' => 'RUC',
                     'class' => 'validate',
-                    'placeholder' => 'DNI - RUC o Documento de identidad',
+                    'placeholder' => 'RUC',
                     'required' => 'required',
                 );
                 echo form_input($User);
-                echo form_label('Documento','username');
+                echo form_label('Documento','RUC');
                 ?>
             </div>
             <div class="input-field col s12">
@@ -25,7 +25,7 @@
                     'name' => 'password',
                     'id' => 'password',
                     'class' => 'validate',
-                    'placeholder' => 'contraseña',
+                    'placeholder' => 'Contraseña',
                     'required' => 'required'
                 );
                 echo form_input($Password);
@@ -41,7 +41,7 @@
                 echo form_submit($button);
                 ?>
             </div>
-            <?php echo form_close(); ?>
+            <?= form_close(); ?>
         </div>
     </div>
 </body>

@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row m-b none">
             <h3 class="center-align darken-4">Ingreso al sistema</h3>
-            <?= form_open('http://igniter.com:8080/Login/postLogin'); ?>
+            <?= form_open("/postLogin"); ?>
             <div class="input-field col s12">
                 <?php 
                 $User = array(
